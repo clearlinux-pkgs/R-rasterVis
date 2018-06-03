@@ -16,6 +16,7 @@ R-brms
 R-broom
 R-caret
 R-clue
+R-compositions
 R-cowplot
 R-ddalpha
 R-dendextend
@@ -27,6 +28,8 @@ R-ggridges
 R-gmodels
 R-gmp
 R-klaR
+R-leaflet
+R-manipulateWidget
 R-mi
 R-modelr
 R-mvoutlier
@@ -35,6 +38,7 @@ R-pdfCluster
 R-prabclus
 R-questionr
 R-recipes
+R-rgl
 R-rms
 R-robCompositions
 R-rsconnect
@@ -43,6 +47,7 @@ R-sem
 R-seriation
 R-sfsmisc
 R-shinystan
+R-sna
 R-spdep
 R-systemfit
 R-tidyverse
