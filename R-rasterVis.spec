@@ -4,20 +4,17 @@
 #
 Name     : R-rasterVis
 Version  : 0.45
-Release  : 21
+Release  : 22
 URL      : https://cran.r-project.org/src/contrib/rasterVis_0.45.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/rasterVis_0.45.tar.gz
 Summary  : Visualization Methods for Raster Data
 Group    : Development/Tools
 License  : GPL-3.0
-Requires: R-Rcpp
-Requires: R-hexbin
-Requires: R-latticeExtra
-Requires: R-raster
-Requires: R-sp
-Requires: R-viridisLite
-Requires: R-zoo
+Requires: R-RColorBrewer
+Requires: R-ggplot2
+BuildRequires : R-RColorBrewer
 BuildRequires : R-Rcpp
+BuildRequires : R-ggplot2
 BuildRequires : R-hexbin
 BuildRequires : R-latticeExtra
 BuildRequires : R-raster
@@ -40,10 +37,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552870290
+export SOURCE_DATE_EPOCH=1556479204
 
 %install
-export SOURCE_DATE_EPOCH=1552870290
+export SOURCE_DATE_EPOCH=1556479204
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -79,7 +76,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc  rasterVis || :
+R CMD check --no-manual --no-examples --no-codoc rasterVis || :
 
 
 %files
