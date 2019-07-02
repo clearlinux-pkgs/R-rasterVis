@@ -1,10 +1,2 @@
-0.45
-R-RColorBrewer
-R-Rcpp
+0.46
 R-ggplot2
-R-hexbin
-R-latticeExtra
-R-raster
-R-sp
-R-viridisLite
-R-zoo
