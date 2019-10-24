@@ -4,14 +4,13 @@
 #
 Name     : R-rasterVis
 Version  : 0.46
-Release  : 27
+Release  : 28
 URL      : https://cran.r-project.org/src/contrib/rasterVis_0.46.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/rasterVis_0.46.tar.gz
 Summary  : Visualization Methods for Raster Data
 Group    : Development/Tools
 License  : GPL-3.0
 Requires: R-RColorBrewer
-Requires: R-ggplot2
 Requires: R-hexbin
 Requires: R-latticeExtra
 Requires: R-raster
@@ -27,6 +26,7 @@ BuildRequires : R-sp
 BuildRequires : R-viridisLite
 BuildRequires : R-zoo
 BuildRequires : buildreq-R
+BuildRequires : util-linux
 
 %description
 [![CRAN](http://www.r-pkg.org/badges/version/rasterVis)](http://www.r-pkg.org/pkg/rasterVis)
@@ -42,10 +42,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1562109842
+export SOURCE_DATE_EPOCH=1571884161
 
 %install
-export SOURCE_DATE_EPOCH=1562109842
+export SOURCE_DATE_EPOCH=1571884161
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
