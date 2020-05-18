@@ -4,14 +4,13 @@
 #
 Name     : R-rasterVis
 Version  : 0.47
-Release  : 32
+Release  : 33
 URL      : https://cran.r-project.org/src/contrib/rasterVis_0.47.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/rasterVis_0.47.tar.gz
 Summary  : Visualization Methods for Raster Data
 Group    : Development/Tools
 License  : GPL-3.0
 Requires: R-RColorBrewer
-Requires: R-ggplot2
 Requires: R-hexbin
 Requires: R-latticeExtra
 Requires: R-raster
@@ -19,7 +18,6 @@ Requires: R-sp
 Requires: R-viridisLite
 Requires: R-zoo
 BuildRequires : R-RColorBrewer
-BuildRequires : R-ggplot2
 BuildRequires : R-hexbin
 BuildRequires : R-latticeExtra
 BuildRequires : R-raster
@@ -36,21 +34,22 @@ BuildRequires : buildreq-R
 
 %prep
 %setup -q -c -n rasterVis
+cd %{_builddir}/rasterVis
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1576533133
+export SOURCE_DATE_EPOCH=1589769208
 
 %install
-export SOURCE_DATE_EPOCH=1576533133
+export SOURCE_DATE_EPOCH=1589769208
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
