@@ -4,7 +4,7 @@
 #
 Name     : R-rasterVis
 Version  : 0.50.2
-Release  : 44
+Release  : 45
 URL      : https://cran.r-project.org/src/contrib/rasterVis_0.50.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/rasterVis_0.50.2.tar.gz
 Summary  : Visualization Methods for Raster Data
