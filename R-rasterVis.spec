@@ -4,7 +4,7 @@
 #
 Name     : R-rasterVis
 Version  : 0.51.2
-Release  : 54
+Release  : 55
 URL      : https://cran.r-project.org/src/contrib/rasterVis_0.51.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/rasterVis_0.51.2.tar.gz
 Summary  : Visualization Methods for Raster Data
@@ -42,10 +42,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1644942774
+export SOURCE_DATE_EPOCH=1644970382
 
 %install
-export SOURCE_DATE_EPOCH=1644942774
+export SOURCE_DATE_EPOCH=1644970382
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -86,3 +86,23 @@ R CMD check --no-manual --no-examples --no-codoc rasterVis || :
 
 %files
 %defattr(-,root,root,-)
+/usr/lib64/R/library/rasterVis/CITATION
+/usr/lib64/R/library/rasterVis/DESCRIPTION
+/usr/lib64/R/library/rasterVis/INDEX
+/usr/lib64/R/library/rasterVis/Meta/Rd.rds
+/usr/lib64/R/library/rasterVis/Meta/features.rds
+/usr/lib64/R/library/rasterVis/Meta/hsearch.rds
+/usr/lib64/R/library/rasterVis/Meta/links.rds
+/usr/lib64/R/library/rasterVis/Meta/nsInfo.rds
+/usr/lib64/R/library/rasterVis/Meta/package.rds
+/usr/lib64/R/library/rasterVis/NAMESPACE
+/usr/lib64/R/library/rasterVis/R/rasterVis
+/usr/lib64/R/library/rasterVis/R/rasterVis.rdb
+/usr/lib64/R/library/rasterVis/R/rasterVis.rdx
+/usr/lib64/R/library/rasterVis/help/AnIndex
+/usr/lib64/R/library/rasterVis/help/aliases.rds
+/usr/lib64/R/library/rasterVis/help/paths.rds
+/usr/lib64/R/library/rasterVis/help/rasterVis.rdb
+/usr/lib64/R/library/rasterVis/help/rasterVis.rdx
+/usr/lib64/R/library/rasterVis/html/00Index.html
+/usr/lib64/R/library/rasterVis/html/R.css
